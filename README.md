@@ -77,3 +77,10 @@ This run the `git commit -m` to commit your changes with comment.
 ![gcommit](/assets/gcommit.gif)
 
 
+## gdelete [branch name]
+This run the `git branch -D` to delete a branch that you input or select.
+![gdelete](/assets/gdelete.gif)
+
+## gdeleteserver [branch name]
+This run the `git push -d origin` to delete a branch that you input or select.
+![gdeleteserver](/assets/gdeleteserver.gif)
