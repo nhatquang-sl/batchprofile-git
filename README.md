@@ -68,8 +68,12 @@ This run the `git checkout` to checkout to the branch that you want.
 You can enter some keywords or use up/down key to choose your branch.
 ![gcko](/assets/gcko.gif)
 
-## gckonew
+## gckonew {new branch name}
 This run the `git checkout -b` to help you create a new branch.
 ![gckonew](/assets/gckonew.gif)
+
+## gcommit {your comment}
+This run the `git commit -m` to commit your changes with comment.
+![gcommit](/assets/gcommit.gif)
 
 
