@@ -3,8 +3,6 @@
 - [Setup](#setup)
 - [gcmd](#gcmd)
 
-
-
 # Overview
 As a developer, I use the git command line every day, and I found some difficult things when using it like:
 - I have to remember the full command.
@@ -42,6 +40,8 @@ The **$PROFILE** variable stores the path to the "Current User, Current Host" pr
 ## Update the PowerShell profile.
 
 Add more PowerShell script modules.
+
+**NOTE:** Change `$env:GCmdScripts` to your path
 ```
 $env:GCmdScripts = "D:\gcmd"
 
