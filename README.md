@@ -52,5 +52,24 @@ Import-module "$env:GCmdScripts\gscripts\gmerge.psm1"
 
 Import-module "$env:GCmdScripts\gscripts\gtagnew.psm1"
 Import-module "$env:GCmdScripts\gscripts\gtaglist.psm1"
-
 ```
+# gcmd
+
+## gadd
+This run the `git add .` to add all your changes to staged changes.
+![gadd](/assets/gadd.gif)
+
+## gbranch
+This run the `git branch` to list all your local branches.
+![gbranch](/assets/gbranch.gif)
+
+## gcko
+This run the `git checkout` to checkout to the branch that you want.
+You can enter some keywords or use up/down key to choose your branch.
+![gcko](/assets/gcko.gif)
+
+## gckonew
+This run the `git checkout -b` to help you create a new branch.
+![gckonew](/assets/gckonew.gif)
+
+
