@@ -82,5 +82,9 @@ This run the `git branch -D` to delete a branch that you input or select.
 ![gdelete](/assets/gdelete.gif)
 
 ## gdeleteserver [branch name]
-This run the `git push -d origin` to delete a branch that you input or select.
+This run the `git push -d origin` to delete on the remote server a branch that you input or select.
 ![gdeleteserver](/assets/gdeleteserver.gif)
+
+## gmaster [branch name]
+This run the `git checkout master` to checkout to master.
+![gmaster](/assets/gmaster.gif)
