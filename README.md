@@ -85,6 +85,24 @@ This run the `git branch -D` to delete a branch that you input or select.
 This run the `git push -d origin` to delete on the remote server a branch that you input or select.
 ![gdeleteserver](/assets/gdeleteserver.gif)
 
-## gmaster [branch name]
+## gmaster
 This run the `git checkout master` to checkout to master.
 ![gmaster](/assets/gmaster.gif)
+
+## gmerge [branch name]
+This run the `git merge` to merge the current branch with a branch that you select or input.
+
+## gpull
+This run the `git pull origin ` to pull the new code of the current branch.
+
+## gpush
+This run the `git push origin` to push all commits in the current branch to remote server.
+
+## gpush
+This run the `git merge` to push force all commits in the current branch to remote server.
+
+## gtaglist
+This run the `git tag` to list or search a tag that you want. Then copy the tag name that you select to clipboard.
+
+## gtagnew
+To create a new tag and push it to remote server.
