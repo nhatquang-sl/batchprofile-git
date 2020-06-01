@@ -14,6 +14,8 @@ So I used the PowerShell core to created some scripts that help me.
 
 I choose the PowerShell to write the script because it can run with Windows and Mac.
 
+If got any roadblocks when setting up, you can contact me via email quang.sunlight@gmail.com
+
 # Setup
 
 ## [Installing PowerShell on Windows](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7)
