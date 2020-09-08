@@ -3,8 +3,14 @@ function gdelete([string]$BranchInput) {
         $cmd = "git branch -D " + $BranchInput.replace("*", "").trim()
         RunBatchCmd $cmd
     } else {
-        $branches = git branch
-        SearchItemOfArray -CmdArray $branches -CmdTemplate 'git branch -D [cmdSelected]'
+        while($true) {
+            $branches = git branch
+            $escape = SearchItemOfArray -CmdArray $branches -CmdTemplate 'git branch -D [cmdSelected]'
+            if($escape -eq $true) {
+                return;
+            }
+        };
+        
     }
 }
 

@@ -55,7 +55,7 @@ function SearchItemOfArray([System.Collections.ArrayList]$CmdArray, [string] $Cm
     if ($ascii -eq 13) {
         $cmdSelected
     }
-#    return $keyPress.VirtualKeyCode -eq 27
+    return $keyPress.VirtualKeyCode -eq 27
 }
 
 function IndexOfItemInArray([System.Collections.ArrayList]$CmdArray, [string]$SeachStr, [int] $SelectCmdIndex) {
