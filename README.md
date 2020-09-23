@@ -43,7 +43,7 @@ Add more PowerShell script modules.
 
 **NOTE:** Change `$env:GCmdScripts` to your path
 ```
-$env:GCmdScripts = "D:\gcmd"
+$env:GCmdScripts = "D:\batchprofile-git"
 
 Import-module "$env:GCmdScripts\search.psm1"
 Import-module "$env:GCmdScripts\gscripts\gbranch.psm1"
