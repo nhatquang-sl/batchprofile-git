@@ -119,3 +119,16 @@ This run the `git tag` to list or search a tag that you want. Then copy the tag 
 
 ## gtagnew
 To create a new tag and push it to remote server.
+
+```
+ssh-keygen -t ed25519 -C "quang.sunlight@gmail.com"
+
+eval "$(ssh-agent -s)"
+
+ssh-add ~/.ssh/id_ed25519
+
+clip < ~/.ssh/id_ed25519.pub
+
+git config --global user.name "Quang Nguyen"
+git config --global user.email quang.sunlight@gmail.com
+```
