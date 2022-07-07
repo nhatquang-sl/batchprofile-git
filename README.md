@@ -1,16 +1,20 @@
 # Table of contents
+
 - [Overview](#overview)
 - [Setup](#setup)
 - [gcmd](#gcmd)
 
 # Overview
+
 As a developer, I use the git command line every day, and I found some difficult things when using it like:
+
 - I have to remember the full command.
 - I have to use my mouse to copy/paste a branch name that I want to checkout.
 - I cannot use the tab key as an autocomplete feature.
 - There are some git commands that I rarely use so each time I use I have to google search.
 
 So I used the PowerShell core to created some scripts that help me.
+
 - Create shortcuts for git commands.
 - Use the tab key for auto-complete.
 - Use up/down to select a branch/tag that I want to checkout
@@ -27,10 +31,12 @@ If got any roadblocks when setting up, you can contact me via email quang.sunlig
 
 ## [Installing PowerShell on macOS](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-7)
 
-## Open PowerShell profile. 
+## Open PowerShell profile.
+
 For Mac use need to run `pwsh` in terminal to switch to PowerShell core.
 
 Run the following command in terminal to open the PowerShell profile.
+
 ```
 code $PROFILE
 ```
@@ -42,80 +48,75 @@ The **$PROFILE** variable stores the path to the "Current User, Current Host" pr
 Add more PowerShell script modules.
 
 **NOTE:** Change `$env:GCmdScripts` to your path
+
 ```
 $env:GCmdScripts = "D:\batchprofile-git"
-
-Import-module "$env:GCmdScripts\search.psm1"
-Import-module "$env:GCmdScripts\gscripts\gbranch.psm1"
-Import-module "$env:GCmdScripts\gscripts\gcommit.psm1"
-Import-module "$env:GCmdScripts\gscripts\gdelete.psm1"
-Import-module "$env:GCmdScripts\gscripts\gdeleteserver.psm1"
-Import-module "$env:GCmdScripts\gscripts\gadd.psm1"
-Import-module "$env:GCmdScripts\gscripts\gckonew.psm1"
-Import-module "$env:GCmdScripts\gscripts\gcko.psm1"
-Import-module "$env:GCmdScripts\gscripts\gpush.psm1"
-Import-module "$env:GCmdScripts\gscripts\gpushforce.psm1"
-Import-module "$env:GCmdScripts\gscripts\grename.psm1"
-Import-module "$env:GCmdScripts\gscripts\gpull.psm1"
-Import-module "$env:GCmdScripts\gscripts\gpullrebase.psm1"
-Import-module "$env:GCmdScripts\gscripts\gmaster.psm1"
-Import-module "$env:GCmdScripts\gscripts\gmerge.psm1"
-
-Import-module "$env:GCmdScripts\gscripts\gtagdelete.psm1"
-Import-module "$env:GCmdScripts\gscripts\gtagdeleteserver.psm1"
-Import-module "$env:GCmdScripts\gscripts\gtagnew.psm1"
-Import-module "$env:GCmdScripts\gscripts\gtaglist.psm1"
+. "$env:GCmdScripts\profile.ps1"
 ```
+
 # gcmd
 
 ## gadd
+
 This run the `git add .` to add all your changes to staged changes.
 ![gadd](/assets/gadd.gif)
 
 ## gbranch
+
 This run the `git branch` to list all your local branches.
 ![gbranch](/assets/gbranch.gif)
 
 ## gcko
+
 This run the `git checkout` to checkout to the branch that you want.
 You can enter some keywords or use up/down key to choose your branch.
 ![gcko](/assets/gcko.gif)
 
 ## gckonew {new branch name}
+
 This run the `git checkout -b` to help you create a new branch.
 ![gckonew](/assets/gckonew.gif)
 
 ## gcommit {your comment}
+
 This run the `git commit -m` to commit your changes with comment.
 ![gcommit](/assets/gcommit.gif)
 
-
 ## gdelete [branch name]
+
 This run the `git branch -D` to delete a branch that you input or select.
 ![gdelete](/assets/gdelete.gif)
 
 ## gdeleteserver [branch name]
+
 This run the `git push -d origin` to delete on the remote server a branch that you input or select.
 ![gdeleteserver](/assets/gdeleteserver.gif)
 
 ## gmaster
+
 This run the `git checkout master` to checkout to master.
 ![gmaster](/assets/gmaster.gif)
 
 ## gmerge [branch name]
+
 This run the `git merge` to merge the current branch with a branch that you select or input.
 
 ## gpull
+
 This run the `git pull origin ` to pull the new code of the current branch.
 
 ## gpush
+
 This run the `git push origin` to push all commits in the current branch to remote server.
 
 ## gpush
+
 This run the `git merge` to push force all commits in the current branch to remote server.
 
 ## gtaglist
+
 This run the `git tag` to list or search a tag that you want. Then copy the tag name that you select to clipboard.
 
 ## gtagnew
+
 To create a new tag and push it to remote server.
