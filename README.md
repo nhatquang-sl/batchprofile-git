@@ -2,6 +2,7 @@
 
 - [Overview](#overview)
 - [Setup](#setup)
+- [Git Global Config](#git-global-config)
 - [gcmd](#gcmd)
 
 # Overview
@@ -52,6 +53,22 @@ Add more PowerShell script modules.
 ```
 $env:GCmdScripts = "D:\batchprofile-git"
 . "$env:GCmdScripts\profile.ps1"
+```
+
+# Git Global Config
+
+Run the following command in terminal to open the git config file.
+
+```
+code %USERPROFILE%\.gitconfig
+```
+
+Setup your name and email.
+
+```
+[user]
+	email = {{your email}}
+	name = {{your name}}
 ```
 
 # gcmd
