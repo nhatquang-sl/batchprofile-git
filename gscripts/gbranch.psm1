@@ -6,7 +6,7 @@ function gbranch() {
     } else {
         $branchCurr = git rev-parse --abbrev-ref HEAD
         for($i = 0; $i -lt $branches.length; $i++) {
-            if($branches[$i] -Like "*$branchCurr*"){
+            if($branches[$i] -Like "* $branchCurr"){
                 Write-Host $branches[$i] -ForegroundColor Green
             } else {
                 Write-Host $branches[$i]
