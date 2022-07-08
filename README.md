@@ -69,6 +69,8 @@ Setup your name and email.
 [user]
 	email = {{your email}}
 	name = {{your name}}
+[alias]
+	hist = log --pretty=format:\"%Cgreen%h %Creset%cr %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)\" --graph --date=relative --decorate --all
 ```
 
 # gcmd
