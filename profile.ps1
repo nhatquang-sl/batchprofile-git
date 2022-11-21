@@ -17,6 +17,7 @@ Import-module "$env:GCmdScripts\gscripts\gpull.psm1"
 Import-module "$env:GCmdScripts\gscripts\gpullrebase.psm1"
 Import-module "$env:GCmdScripts\gscripts\gmaster.psm1"
 Import-module "$env:GCmdScripts\gscripts\gmerge.psm1"
+Import-module "$env:GCmdScripts\gscripts\gmergeabort.psm1"
 
 Import-module "$env:GCmdScripts\gscripts\gtagdelete.psm1"
 Import-module "$env:GCmdScripts\gscripts\gtagdeleteserver.psm1"
