@@ -1,7 +1,10 @@
+Set-Alias g git
+Set-Alias tig 'C:\Program Files\Git\usr\bin\tig.exe'
+# Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
+
 Import-module "$env:GCmdScripts\search.psm1"
 Import-module "$env:GCmdScripts\gscripts\gbranch.psm1"
 Import-module "$env:GCmdScripts\gscripts\gcommit.psm1"
-Import-module "$env:GCmdScripts\gscripts\gcommittk.psm1"
 Import-module "$env:GCmdScripts\gscripts\gdelete.psm1"
 Import-module "$env:GCmdScripts\gscripts\gdeleteserver.psm1"
 Import-module "$env:GCmdScripts\gscripts\gadd.psm1"

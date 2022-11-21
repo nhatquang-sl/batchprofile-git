@@ -71,6 +71,8 @@ Setup your name and email.
 	name = {{your name}}
 [alias]
 	hist = log --pretty=format:\"%Cgreen%h %Creset%cr %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)\" --graph --date=relative --decorate --all
+	ps = "!git push origin $(git rev-parse --abbrev-ref HEAD)"
+	pl = "!git pull origin $(git rev-parse --abbrev-ref HEAD)"
 ```
 
 # gcmd
