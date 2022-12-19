@@ -1,6 +1,6 @@
 function gdiscardallchanges([string]$branchInput) {
-    RunBatchCmd 'git reset –-hard'
     RunBatchCmd 'git clean -fxd'
+    RunBatchCmd 'git reset --hard'
 }
 
 Export-ModuleMember -Function gdiscardallchanges
